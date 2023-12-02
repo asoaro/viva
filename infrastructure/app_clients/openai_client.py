@@ -16,7 +16,7 @@ class OpenAIClient():
         openai_api_key = os.getenv('OPENAI_API_KEY')
         model_name = "gpt-4-1106-preview"
         temperature = 0.1
-        model = OpenAI(model_name=model_name, temperature=temperature, openai_api_key=openai_api_key)
+        model = OpenAI(model_name=model_name, temperature=temperature, openai_api_key="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")
         role = """
                 我是一位中国人，正在寻求帮助以提高我的英语口语能力。
                 我想展示一段我和我的英语老师之间的对话（我是发言者B）。
