@@ -1,11 +1,8 @@
 # Import convention
-import os
-from tempfile import NamedTemporaryFile
 
 import streamlit as st
 
-from domain.services.main_processor import MainProcessor
-from domain.services.video_processor import VideoProcessor
+from application.main_processor import MainProcessor
 
 
 class Streamlit:

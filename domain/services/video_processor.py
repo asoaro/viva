@@ -1,9 +1,8 @@
 import json
-import os
 
 import assemblyai as aai
 
-from infrastructure.app_clients.assemblyai_client import AssemblyAIClient
+from infrastructure.app_clients.s2t_client.assemblyai_client import AssemblyAIClient
 
 
 class VideoProcessor:

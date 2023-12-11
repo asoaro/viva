@@ -40,7 +40,7 @@ class TextProcessor:
 
     @staticmethod
     def get_utterances_from_Transcript(json_data):
-        utterances = json_data.get("utterances", [])
+        utterances = json_data.get("utterances.txt", [])
         content = []
         if utterances is not None:
             for entry in utterances:

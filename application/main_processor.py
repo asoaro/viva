@@ -2,7 +2,7 @@ from tempfile import NamedTemporaryFile
 
 from domain.services.text_processor import TextProcessor
 from domain.services.video_processor import VideoProcessor
-from infrastructure.app_clients.openai_client import OpenAIClient
+from infrastructure.app_clients.llm_client.openai_client import OpenAIClient
 
 
 class MainProcessor:
