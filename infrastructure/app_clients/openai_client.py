@@ -10,8 +10,13 @@ from langchain.prompts import PromptTemplate
 from domain.entities.revision import Revision
 
 
-class OpenAIClient():
+class OpenAIClient:
+
+    def __init__(self, st):
+        self.st = st
+
     def polish_expression(self, utterances):
+        self.st.write("GPT解析中")
         load_dotenv()
         openai_api_key = os.getenv('OPENAI_API_KEY')
         model_name = "gpt-4-1106-preview"
@@ -38,7 +43,7 @@ class OpenAIClient():
             partial_variables={"format_instructions": parser.get_format_instructions()},
         )
 
-        _input = prompt.format_prompt(query=role+str(utterances))
+        _input = prompt.format_prompt(query=role + str(utterances))
         _output = model.invoke(_input.to_string())
         start = _output.find('{')
         end = _output.rfind('}') + 1
@@ -59,6 +64,6 @@ class OpenAIClient():
                 output_str += f"{key} says: {value}\n"
             output_str += "\n"
 
-        with(open("utterances_with_suggestion.txt", "w") as f):
+        with open("utterances_with_suggestion.txt", "w") as f:
             f.write(output_str)
         return "utterances_with_suggestion.txt"

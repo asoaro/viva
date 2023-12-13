@@ -8,6 +8,9 @@ from infrastructure.app_clients.assemblyai_client import AssemblyAIClient
 
 class VideoProcessor:
 
+    def __init__(self, st):
+        self.st = st
+
     def get_transcript_from_video(self, uploaded_file):
         transcriber = AssemblyAIClient().get_transcriber()
         transcript = transcriber.transcribe(uploaded_file)
@@ -20,6 +23,7 @@ class VideoProcessor:
             json.dump(transcript.json_response, file)
         print(transcript.json_response)
         print("get transcripts successfully!")
+        self.st.write("解析视频成功")
         return transcript.json_response
 
 
