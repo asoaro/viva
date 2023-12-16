@@ -2,7 +2,7 @@ import os
 import openai
 from openai import OpenAI
 
-with open("instruction.txt", "r") as f:
+with open("../../../instruction.txt", "r") as f:
     instruction = f.read()
 
 client = OpenAI(api_key="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")

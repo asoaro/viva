@@ -10,6 +10,9 @@ class VideoProcessor:
     def __init__(self, st):
         self.st = st
 
+    def execute(self, uploaded_file):
+        return self.get_transcript_from_video(uploaded_file)
+
     def get_transcript_from_video(self, uploaded_file):
         transcriber = AssemblyAIClient().get_transcriber()
         transcript = transcriber.transcribe(uploaded_file)
@@ -22,6 +25,7 @@ class VideoProcessor:
             json.dump(transcript.json_response, file)
         print(transcript.json_response)
         print("get transcripts successfully!")
+        # 打印到前端
         self.st.write("解析视频成功")
         return transcript.json_response
 

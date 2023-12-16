@@ -4,7 +4,6 @@ import time
 import dotenv
 from datetime import datetime
 from openai import OpenAI
-from functions import Functions
 dotenv.load_dotenv()
 OpenAI.api_key = os.getenv('OPENAI_API_KEY')
 
@@ -26,6 +25,7 @@ def show_json(data):
     print(json_data)
 
 class Assistant:
+
     def __init__(self):
         # 环境变量
         while OpenAI.api_key is None:
@@ -49,6 +49,9 @@ class Assistant:
         # 初始化thread
         self.create_AI_thread()
 
+        #
+        self.suggestion = ""
+
     def create_AI_thread(self):
         """Creates an OpenAI Assistant thread, which maintains context for a user's interactions."""
         print('Creating llm_client thread...')
@@ -59,34 +62,27 @@ class Assistant:
 
     def wait_on_run(self):
         """Waits for an OpenAI llm_client run to finish and handles the response."""
-        print('Waiting for llm_client response...')
+
+        # polling
         while self.run.status == "queued" or self.run.status == "in_progress":
+            # refresh run
             self.run = self.client.beta.threads.runs.retrieve(thread_id=self.thread.id, run_id=self.run.id)
+
+            now = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
+            print(now + '  Waiting for llm_client response...')
             time.sleep(1)
-        if self.run.status == "requires_action":
-            print(f'\nASSISTANT REQUESTS {len(self.run.required_action.submit_tool_outputs.tool_calls)} TOOLS:')
-            tool_outputs = []
-            for tool_call in self.run.required_action.submit_tool_outputs.tool_calls:
-                tool_call_id = tool_call.id
-                name = tool_call.function.name
-                arguments = json.loads(tool_call.function.arguments)
-                print(f'\nAssistant requested {name}({arguments})')
-                output = getattr(Functions, name)(**arguments)
-                tool_outputs.append({"tool_call_id": tool_call_id, "output": json.dumps(output)})
-                print(f'\n\tReturning {output}')
-            self.run = self.client.beta.threads.runs.submit_tool_outputs(thread_id=self.thread.id,
-                                                                         run_id=self.run.id,
-                                                                         tool_outputs=tool_outputs)
-            self.wait_on_run()
-        else:
-            # Get messages added after our last user message
-            new_messages = self.client.beta.threads.messages.list(thread_id=self.thread.id, order="asc",
-                                                                  after=self.message.id)
-            with open(LOGFILE, 'a+') as f:
-                f.write('\n**Assistant**:\n')
-                for m in new_messages:
-                    f.write(m.content[0].text.value)
-                f.write('\n\n---\n')
+
+        # Get messages added after our last user message
+        new_messages = self.client.beta.threads.messages.list(thread_id=self.thread.id, order="asc",
+                                                              after=self.message.id)
+        with open(LOGFILE, 'a+') as f:
+            now = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
+            print(now + '  write response...')
+            f.write('\n**Assistant**:\n')
+            for m in new_messages:
+                self.suggestion += str(m.content[0].text.value)
+                f.write(m.content[0].text.value)
+            f.write('\n\n---\n')
 
     def send_message(self, message_text: str):
         """
@@ -108,13 +104,10 @@ class Assistant:
         self.run = self.client.beta.threads.runs.create(thread_id=self.thread.id, assistant_id=self.assistant.id)
         self.wait_on_run()
 
-
+    def get_final_result(self):
+        return self.suggestion
 
 if __name__ == "__main__":
     assistant = Assistant()  # 懒汉式初始化 assistant和thread
-    with open("instruction.txt", "r") as f:
-        instruction = f.read()
-        with open("utterances.txt", "r") as f:
-            utterances = f.read()
-    assistant.send_message(instruction + utterances)
-    assistant.send_message("continue")
+    assistant.send_message("who you are ")
+    assistant.send_message("what's your name ")

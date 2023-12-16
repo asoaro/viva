@@ -1,11 +1,13 @@
-import json
 import math
 
 
-class TextProcessor:
+class UtterancesProcessor:
 
     def __init__(self, st):
         self.st = st
+
+    def execute(self, transcript):
+        return self.get_utterances_from_transcript(transcript)
 
     def swap_label_if_necessary(self, content):
         # Step 1: Read the conversation from a .txt file
@@ -40,11 +42,12 @@ class TextProcessor:
                     speaker = 'speaker A'
             line = f"{speaker}: {sentence}"
         print("Conversation revised and saved to revised_conversation.txt")
-        self.st.write("语音解析完成 您本次对话进行了 {} 轮, 共输出单词 {} 个, 外教输出 {} 个".format(math.ceil(len(lines) / 2), word_count_B, word_count_A))
+        self.st.write("语音解析完成 您本次对话共进行了 {} 轮, 您输出单词 {} 个, 外教输出 {} 个".format(math.ceil(len(lines) / 2), word_count_B, word_count_A))
+        self.st.write("GPT正在根据你们的语境逐句分析你的表达")
         return lines
 
-    def get_utterances_from_transcript(self, json_data):
-        utterances = json_data.get("utterances", [])
+    def get_utterances_from_transcript(self, transcript):
+        utterances = transcript.get("utterances", [])
         content = []
         if utterances is not None:
             for entry in utterances:
