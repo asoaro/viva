@@ -1,8 +1,11 @@
 # Import convention
+import os
+from tempfile import NamedTemporaryFile
 
 import streamlit as st
 
-from application.main_processor import MainProcessor
+from domain.services.main_processor import MainProcessor
+from domain.services.video_processor import VideoProcessor
 
 
 class Streamlit:
@@ -14,6 +17,7 @@ class Streamlit:
         st.markdown(body, unsafe_allow_html=False, help=None)
 
         st.link_button("B站主页", "https://space.bilibili.com/244791824")
+        st.link_button("英语兔", "https://www.bilibili.com/video/BV1r54y1m7gd/?spm_id_from=333.999.0.0&vd_source=dea414ee2d39e74f662ceec0edffdf24")
 
         label_upload = "在下方上传你和native speaker的对话视频或者录音,得到GPT给出的地道表达建议"
         uploaded_file = st.file_uploader(label_upload, type=["mp4", "mp3"])
@@ -21,14 +25,14 @@ class Streamlit:
         if uploaded_file is not None:
             #  等待状态
             url = None
-            with st.spinner('Wait for it... 步骤处理比较多，可能需要耐心等几分钟'):
-                url = MainProcessor().execute(uploaded_file)
+            with st.status('Wait for it... 步骤处理比较多，可能需要耐心等几分钟', expanded=True):
+                url = MainProcessor(st).execute(uploaded_file)
                 label_download = "点击下载（这是GPT帮你纠正后的地道表达）"
                 if url is not None:
-                    with open(url , "rb") as result:
-                        btn = st.download_button(label_download, result, file_name=url, mime=None, key=None, help=None, on_click=None, args=None,
-                                           kwargs=None, type="secondary", disabled=False, use_container_width=False)
+                    with open(url, "rb") as result:
+                        btn = st.download_button(label_download, result, file_name=url, mime=None, key=None, help=None,
+                                                 on_click=None, args=None,
+                                                 kwargs=None, type="secondary", disabled=False,
+                                                 use_container_width=False)
 
                 st.success('Done!')
-
-

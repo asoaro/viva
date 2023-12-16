@@ -2,6 +2,7 @@ import assemblyai as aai
 import os
 from dotenv import load_dotenv
 
+
 class AssemblyAIClient:
     def get_transcriber(self):
         load_dotenv()

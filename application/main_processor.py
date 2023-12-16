@@ -6,20 +6,20 @@ from infrastructure.app_clients.llm_client.openai_client import OpenAIClient
 
 
 class MainProcessor:
+    def __init__(self, st):
+        self.st = st
+
     def execute(self, uploaded_file):
         if uploaded_file is not None:
-            videoProcessor = VideoProcessor()
+            videoProcessor = VideoProcessor(self.st)
+            textProcessor = TextProcessor(self.st)
+            openAIClient = OpenAIClient(self.st)
             if uploaded_file is not None:
-                with NamedTemporaryFile(suffix="mp4") as temp:
+                with NamedTemporaryFile(suffix=".mp4", delete=False) as temp:
                     temp.write(uploaded_file.getvalue())
                     temp.seek(0)
-
+                    self.st.write("文件上传成功")
                     transcript = videoProcessor.get_transcript_from_video(temp.name)
-                    utterances = TextProcessor.get_utterances_from_Transcript(transcript)
-                    url = OpenAIClient().polish_expression(utterances)
+                    utterances = textProcessor.get_utterances_from_transcript(transcript)
+                    url = openAIClient.polish_expression(utterances)
                     return url
-
-
-
-
-
