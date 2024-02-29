@@ -1,116 +1,547 @@
 ```json
 {
-  "properties": {
-    "Suggestion": {
-      "title": "Suggestion",
-      "description": "对每一轮对话的修改和标记",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/Revision"
-      }
-    }
-  },
-  "required": ["Suggestion"],
-  "definitions": {
-    "Revision": {
-      "title": "Revision",
-      "type": "object",
-      "properties": {
-        "Round": {
-          "title": "Round",
-          "description": "对话轮数",
-          "type": "string"
+    "Suggestion": [
+        {
+            "Round": "1",
+            "speaker_A": "Hello.",
+            "speaker_B": "Good morning. How are you?",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
         },
-        "speaker_A": {
-          "title": "Speaker A",
-          "description": "speaker A 的原表达",
-          "type": "string"
+        {
+            "Round": "2",
+            "speaker_A": "I'm good. How are you?",
+            "speaker_B": "That's nice. Yeah. I'm actually preparing because I'm going to the Philippines on Saturday, so I'm just packing a little bit.",
+            "authentic_expression": "I'm well, thank you. I'm actually getting ready for a trip; I'm heading to the Philippines this Saturday, so I've started packing.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
         },
-        "speaker_B": {
-          "title": "Speaker B",
-          "description": "speaker B 的原表达",
-          "type": "string"
+        {
+            "Round": "3",
+            "speaker_A": "You're going to Manila?",
+            "speaker_B": "I'm going to actually go to Boraque island. Have you heard of Boraque Island? I think that. What do you guys call Boraque island? My friend just told me. Is it? No, no, that's in Thailand, I think.",
+            "authentic_expression": "Actually, I'm going to Boracay Island. Have you heard of it? What do you call Boracay Island? My friend mentioned it recently. Wait, no, I'm thinking of something else—that's in Thailand.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
         },
-        "authentic_expression": {
-          "title": "Authentic Expression",
-          "description": "你提供的authentic expression",
-          "type": "string"
+        {
+            "Round": "4",
+            "speaker_A": "Yeah, I'm going to.",
+            "speaker_B": "Right now.",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
         },
-        "tags": {
-          "title": "Tags",
-          "description": "这些中的一个或者多个",
-          "type": "string"
-        }
-      },
-      "required": ["Round", "speaker_A", "speaker_B", "authentic_expression", "tags"]
-    }
-  },
-  "Suggestion": [
-    {
-      "Round": "1",
-      "speaker_A": "Gutogu. Yeah, that's my favorite mushroom. I love that mushroom. It's so good.",
-      "speaker_B": "Do you know the mushroom is more colorful? Maybe it's toxic.",
-      "authentic_expression": "Do you know if the more colorful mushrooms are toxic?",
-      "tags": "WORD_USAGE_ERROR"
-    },
-    {
-      "Round": "2",
-      "speaker_A": "The colorful ones, yeah. But I don't go find mushrooms for myself. Do you go look for mushrooms? I just buy them from the store.",
-      "speaker_B": "No, but a province in China called, there are a lot of kinds of mushrooms.",
-      "authentic_expression": "No, but there's a province in China that's famous for its variety of mushrooms.",
-      "tags": "SENTENCE_STRUCTURE_ERROR"
-    },
-    {
-      "Round": "3",
-      "speaker_A": "Cool.",
-      "speaker_B": "The local people really like it.",
-      "authentic_expression": "The local people really enjoy them.",
-      "tags": "VOCABULARY"
-    },
-    {
-      "Round": "4",
-      "speaker_A": "That's cool.",
-      "speaker_B": "But some are toxic. When you deadly, you will have some.",
-      "authentic_expression": "But some are toxic. Occasionally, there are deadly ones among them.",
-      "tags": "WORD_USAGE_ERROR"
-    },
-    {
-      "Round": "5",
-      "speaker_A": "This is a big topic. So first of all, people go. Literally, they call it mushroom hunting in the US. Like, they look for mushrooms. People love to go look for mushrooms in the US. We have mushrooms here too. And it's true. Some of them are like, you can eat them and they're toxic. Like, deadly. You can actually die from eating them. They're really bad for you. But some of them, and we usually call these shrooms, they're hallucinogenic.",
-      "speaker_B": "none",
-      "authentic_expression": "none",
-      "tags": "CORRECT"
-    },
-    {
-      "Round": "6",
-      "speaker_A": "How do I spell that? I have to figure out how to spell this. Okay, hallucinogenic, which means that you can kind of see things that aren't there. And it's like a drug, like you said. Like a drug. Oh, shoot. Keep talking. My laptop is going to die. I'm getting my charger. But keep talking. I can hear you. Yes. So these, like, these mushrooms. These mushrooms are like, people take them for fun.",
-      "speaker_B": "Like take jobs.",
-      "authentic_expression": "You mean like taking drugs?",
-      "tags": "CLARITY_AND_FLUENCY"
-    },
-    {
-      "Round": "7",
-      "speaker_A": "You know what I mean?",
-      "speaker_B": "Yeah, like taking a dog. You don't do that.",
-      "authentic_expression": "Yeah, it's like consuming drugs for recreation, which isn't something we do.",
-      "tags": "WORD_USAGE_ERROR"
-    },
-    {
-      "Round": "8",
-      "speaker_A": "Is it expensive? It's more expensive than just like, the mushrooms you eat. But I don't think so. They're not like crazy expensive. I have had them for.",
-      "speaker_B": "none",
-      "authentic_expression": "none",
-      "tags": "CORRECT"
-    },
-    {
-      "Round": "9",
-      "speaker_A": "And they're like. They're.",
-      "speaker_B": "none",
-      "authentic_expression": "none",
-      "tags": "CORRECT"
-    }
-  ]
-}
-```The JSON response provided is complete and contains suggestions and tags for each round of dialogue you provided. Since the sequence ended at round 9 with "speaker A: And they're like. They're.", there isn't a continuation to provide further.
-
-However, if you have more dialogue that you'd like to be reviewed, please feel free to include it and I'll be happy to continue providing suggestions and tags for additional rounds of conversation.
+        {
+            "Round": "5",
+            "speaker_A": "You're going there next month.",
+            "speaker_B": "Oh, fun. I love Phuket Island. I thought you went there recently. Did you go there recently?",
+            "authentic_expression": "How exciting! I love Phuket Island. Didn't you visit there recently?",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "6",
+            "speaker_A": "No, I went to a Chinese island.",
+            "speaker_B": "Which one?",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "7",
+            "speaker_A": "Hainan.",
+            "speaker_B": "Oh, Hainan. Oh, I've never been to Hainan before. Is it fun?",
+            "authentic_expression": "Oh, Hainan. I've never been there. Is it a nice place to visit?",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "8",
+            "speaker_A": "Yeah, but I think they are the same.",
+            "speaker_B": "Phuket and Hainan. You think is the same?",
+            "authentic_expression": "Phuket and Hainan? Do you think they're similar?",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "9",
+            "speaker_A": "Yeah, because they're all in same.",
+            "speaker_B": "But, like, the islands must be really different. I know the food at least is different because Phuket has been.",
+            "authentic_expression": "But surely the islands have their own unique aspects. At the very least, I'd expect the food to be quite different; after all, Phuket has its own...",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "10",
+            "speaker_A": "I don't know. For me, I'm thinking there may be, like, Beijing and Shanghai to some extent. Both are the big cities.",
+            "speaker_B": "Oh, you think that Shanghai and Beijing are similar?",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "11",
+            "speaker_A": "For me, yeah.",
+            "speaker_B": "Really? I did not expect that. I thought that Beijing would feel like a really old city and Shanghai feels like really modern and new.",
+            "authentic_expression": "Really? That surprises me. I've always thought of Beijing as being quite historical and old, while Shanghai comes across as very modern and new.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "12",
+            "speaker_A": "Except you go to the core of Beijing. Last month, when I came back to Beijing, I took a taxi to, say, the Tian square and other streets in front of Tianan Square. That core area is so old.",
+            "speaker_B": "It's very old. It's like.",
+            "authentic_expression": "It is indeed very old. It's like stepping back in time.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "13",
+            "speaker_A": "Qing dynasty.",
+            "speaker_B": "Wow, that's really cool. But why do people go to Hainan?",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "14",
+            "speaker_A": "Most part of China are in tropical.",
+            "speaker_B": "So people like to go to the warm, tropical island. But when you go to Hainan, do you spend time on the beach or what kinds of things do you do?",
+            "authentic_expression": "So people are drawn to the warm, tropical climate of the island. When you visit Hainan, do you typically spend time on the beach, or what other activities do you enjoy?",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "15",
+            "speaker_A": "For me, I prefer to just lay on the beach and enjoy the sun. Some of my workers, they prefer to coworkers to visit different attractions. Sure, I saw that. That's boring.",
+            "speaker_B": "Okay. So they like to explore. We can say, like, you like to lounge or you like to rest and unbaze. Actually, I love doing both of these things. When I go on a trip, I always feel like I want to do, like, half resting and half exploring.",
+            "authentic_expression": "Okay, so they like exploring. You can say you prefer to lounge or to simply relax on the beach. Personally, I enjoy a bit of both. When I travel, I like to split my time between relaxing and sightseeing.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "16",
+            "speaker_A": "Yeah. In chinese Internet, there is a term to describe the busy.",
+            "speaker_B": "To describe the what?",
+            "authentic_expression": "Can you elaborate on what this term describes?",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "17",
+            "speaker_A": "Special troops. Special troops travel.",
+            "speaker_B": "Special troops travel?",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "18",
+            "speaker_A": "Yeah, because you are. Hurry up. Light. A special troop. Like special troops.",
+            "speaker_B": "Did you say troops?",
+            "authentic_expression": "Yes, it's like traveling at a fast pace, with efficiency, similar to special forces.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "19",
+            "speaker_A": "Yeah, doing their mission.",
+            "speaker_B": "You mean for the military?",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "20",
+            "speaker_A": "Yeah.",
+            "speaker_B": "Okay. You can say special forces. Special forces doing okay. What are you saying about special forces?",
+            "authentic_expression": "I see. So you're talking about traveling in a style that's similar to how special forces would operate – very focused and efficient. What exactly are you trying to convey about special forces?",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "21",
+            "speaker_A": "Because when you travel you are too busy to switch between different attractions like soldier doing their mission.",
+            "speaker_B": "Okay, I understand.",
+            "authentic_expression": "Ah, I understand now. You're referring to the kind of travel where you're moving quickly and ceaselessly between different attractions, much like a soldier would carry out a mission.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "22",
+            "speaker_A": "I guess you don't know it.",
+            "speaker_B": "No. How do you say that? Hey, in China we would say is there a draft, a military draft which means. It means mandatory military service. Let me ask did you ever do the military in China? Dunbing.",
+            "authentic_expression": "I'm not familiar with that. By the way, we use the term 'draft' for mandatory military service. Did you ever serve in the Chinese military? Dunbing, I believe it's called?",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "23",
+            "speaker_A": "Oh, I got, I got conscription. I mean like Korea.",
+            "speaker_B": "Yeah, Taiwan also has this.",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "24",
+            "speaker_A": "Everyone except the special.",
+            "speaker_B": "Everyone. All men, all.",
+            "authentic_expression": "You mean all eligible men, except for those who are exempt.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "25",
+            "speaker_A": "Most in the population is not that much that huge. Will take this place.",
+            "speaker_B": "Okay, so China doesn't have it because you have a really big population.",
+            "authentic_expression": "I see, so China doesn't have mandatory military service because the population is so large, not everyone needs to be drafted.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "26",
+            "speaker_A": "Yeah, depends on your.",
+            "speaker_B": "Did you ever consider joining the military?",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "27",
+            "speaker_A": "Yeah, we invite freshman year.",
+            "speaker_B": "Oh, you thought about it? No, I actually thought about it too. I almost joined.",
+            "authentic_expression": "You mean you considered it during your freshman year? Yes, I've had similar thoughts myself and almost enlisted.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "28",
+            "speaker_A": "I think this kind of sought emerged when you were in a stage that you don't know the real world, you don't know the society.",
+            "speaker_B": "Yeah, I think that's when I was doing it too also when I was in high school I was thinking about.",
+            "authentic_expression": "It’s common for these thoughts to emerge at a stage in life when you’re unfamiliar with the realities of the world and society. I experienced something similar during my high school years.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "29",
+            "speaker_A": "It now for me I think that it just waste time.",
+            "speaker_B": "Agree. I'm so happy that I did not do it. I'm really happy I did not do it. But usually, of course there are different military bases in different places. So we call military base like a military base is where it's.",
+            "authentic_expression": "I'm convinced now that it would have been a waste of time. I'm really glad I didn't join the military. But speaking of the military, there are bases all over the place. A military base is essentially the location where it's situated.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "30",
+            "speaker_A": "What'S happening. You mean the camp or the amount of military.",
+            "speaker_B": "So military base is just talking about the place that you would be stationed which means it's basically talking about the permanent spot for the military.",
+            "authentic_expression": "Right. A military base refers to the location where one would be stationed, the permanent location for military operation.",
+            "tags": "GRAMMAR"
+        },
+        {
+            "Round": "31",
+            "speaker_A": "Like that island you mentioned before, a Penghu Guangdao we call it.",
+            "speaker_B": "Oh, Guangdao.",
+            "authentic_expression": "Oh, Penghu. Yes, I've heard of it.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "32",
+            "speaker_A": "You say megwo military base or that's Guam Guangdao.",
+            "speaker_B": "Yeah. Oh, I thought you were talking about. Because in Taiwan pung Hu is known for. Yeah, like Guam for this. This. It's like a facility the area where the military owns it and it's all operated by the military. Right. And so it's kind of like we're one of the branches of the military. They have the equipment and the soldiers and they do training and they work. Yeah, that's military base.",
+            "authentic_expression": "Yes, I see the confusion. Well, in Taiwan, Penghu is known for its military presence. So you're referring to the facilities and areas operated solely by the military. Exactly, it's like a hub for one of the military branches where they have equipment, personnel, and conduct training and operations. That's what constitutes a military base.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "33",
+            "speaker_A": "Did your boyfriend take?",
+            "speaker_B": "He had to. Yeah. Because in Taiwan you have went to. He went to Penghu for his.",
+            "authentic_expression": "He had to, yes. In Taiwan, military service is required, and he served in Penghu.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "34",
+            "speaker_A": "You mean now or before?",
+            "speaker_B": "Yeah.",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "35",
+            "speaker_A": "Do you know Jinmen?",
+            "speaker_B": "Yeah, I know Jinmen really close to.",
+            "authentic_expression": "Yes, Jinmen is located quite close to...",
+            "tags": "SENTENCE_SEQUENCE_ERROR"
+        },
+        {
+            "Round": "36",
+            "speaker_A": "Interesting story. When the party, previous party in Taiwan went out of mainland, they went to Taiwan. Right. But Taiwan is far from mainland, almost 200. They also occupied Jimmy at that time. But mainland military didn't take over Jimmy because they saw that maybe it was a connection between Taiwan and mainland.",
+            "speaker_B": "Yeah, it's interesting because Jinmen is kind of far from Taiwan. It's really close to China, so it does feel really interesting. I know. I had a friend who lived in Jinmen to teach English, and she said it's like, really weird to live. Know a lot of people, when they think of Jinmen, they only think about military and Galiang. You know, Galiang, the alcohol, Galang tiao. You mean Galiang Tiao? Yeah. So people mostly just think about Jinmen for this. I think military and Galionjiu. Yeah, but not for Guam. Also Guam is famous were like that military. But.",
+            "authentic_expression": "Yes, Jinmen's historical significance is fascinating. Although it's closer to China, it forms part of Taiwan. Living there must be quite unique, I imagine. People often associate Jinmen with military installations and Galiang liquor. As for Guam, it's also known for its military significance, albeit in a different context.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "37",
+            "speaker_A": "What a japanese island. Guantao. Isn't it Guam?",
+            "speaker_B": "No. Are we thinking about a different island? Guam is the US island. It's the United States.",
+            "authentic_expression": "No, I think you might be confusing it with another place. Guam is an American territory in the Pacific.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "38",
+            "speaker_A": "It's United States. I know the military is american.",
+            "speaker_B": "Yeah, I suppose it's a territory of the.",
+            "authentic_expression": "Yes, Guam is indeed a territory of the United States.",
+            "tags": "GRAMMAR"
+        },
+        {
+            "Round": "39",
+            "speaker_A": "Oh, okay.",
+            "speaker_B": "Yeah. So we don't call it a state. We call it a US territory territory.",
+            "authentic_expression": "Correct. It's not a state, it's classified as a U.S. territory.",
+            "tags": "GRAMMAR"
+        },
+        {
+            "Round": "40",
+            "speaker_A": "Okay.",
+            "speaker_B": "Kind of like, I don't know. Do you know Puerto Rico?",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "41",
+            "speaker_A": "Puerto Rico.",
+            "speaker_B": "Puerto Rico is also a territory. It's not a. Yeah, but it's funny because like I told you, I never considered taking a vacation to Guam. But now I've heard so many asian people say that they will take the vacation to Guam, and I think, oh, that's so interesting. I kind of want to go now. It sounds cool. It sounds spice.",
+            "authentic_expression": "That's right, Puerto Rico is another U.S. territory, not a state. It's interesting, I've never really thought about visiting Guam before, but I've heard quite a few people from Asia```json
+            mention it as a vacation destination. It's piqued my interest; I might consider going there myself. It seems like an intriguing place.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "42",
+            "speaker_A": "Maybe it's what some are. Spice, some vinegars are spies.",
+            "speaker_B": "What do you mean? Oh, spies. Spies. Spies. Spies. Yeah, it could be, but I think they will waste a little bit of time in Guam. Yeah, there are a lot of spies in Washington, DC. A lot. I think people say, like, the highest population of spies are in DC. Yeah, I used to live in DC, and me and my boyfriend, we used to go out and guess who was a spy.",
+            "authentic_expression": "I'm not sure what you're getting at—spies, perhaps? It's possible, though it seems like an unproductive use of their time in Guam. Indeed, Washington, DC is notorious for espionage activities; some even say it has the highest number of spies. I once lived in DC, and my boyfriend and I would playfully speculate who among the crowd could be a spy.",
+            "tags": "WORD_USAGE_ERROR"
+        },
+        {
+            "Round": "43",
+            "speaker_A": "But you can't exactly find out.",
+            "speaker_B": "Yeah, we cannot find out, but we would just create stories for different people and be like, oh, this person, maybe Chinese. Definitely a lot of Chinese spies in Washington DC for, um. But you said you're going to Phuket next month. Are you going with people or are you going? Just you?",
+            "authentic_expression": "Right, we could never truly know, but it was entertaining to invent stories for various individuals, pondering their possible backgrounds. As for many Chinese spies, well, that's a common suspicion in DC. Switching topics, you mentioned that you're heading to Phuket next month. Will you be traveling alone or with others?",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "44",
+            "speaker_A": "With my colleague.",
+            "speaker_B": "That's fun. Is it a man or woman? Colleague.",
+            "authentic_expression": "Sounds like a good time. Are your colleagues men or women?",
+            "tags": "WORD_USAGE_ERROR"
+        },
+        {
+            "Round": "45",
+            "speaker_A": "A man are the majority.",
+            "speaker_B": "Oh, colleagues.",
+            "authentic_expression": "Mostly men.",
+            "tags": "GRAMMAR"
+        },
+        {
+            "Round": "46",
+            "speaker_A": "You're going colleagues? Yeah, with my team, actually.",
+            "speaker_B": "Okay. That's a fun trip. Are you kidding? Is it organized by your company or you guys? Organized it on your own by my.",
+            "authentic_expression": "So you're going with your colleagues? That should be a fun trip. Did your company organize it, or did you arrange it yourselves?",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "47",
+            "speaker_A": "Team, not the whole company.",
+            "speaker_B": "Okay. But I mean, is the company paying for it, really?",
+            "authentic_expression": "My team, not the entire company.",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "48",
+            "speaker_A": "Yeah, because we are a travel company.",
+            "speaker_B": "You didn't tell me that before.",
+            "authentic_expression": "Yes, the company is sponsoring it since we're in the travel business.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "49",
+            "speaker_A": "My team's business is selling hotels.",
+            "speaker_B": "Hotels?",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "50",
+            "speaker_A": "Yeah.",
+            "speaker_B": "What about hotels?",
+            "authentic_expression": "What do you mean by 'selling hotels'? Do you mean hotel bookings?",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "51",
+            "speaker_A": "You book hotels on app.",
+            "speaker_B": "Okay. Is it just a chinese app or.",
+            "authentic_expression": "You can book hotels through our app.",
+            "tags": "GRAMMAR"
+        },
+        {
+            "Round": "52",
+            "speaker_A": "Is it international trip? Yeah, maybe we are the same group. We also have broad business, but now most users are the Chinese. They go abroad in Utah.",
+            "speaker_B": "Interesting. Cool.",
+            "authentic_expression": "We do cater to international trips. Although we have a diverse user base, currently, most of our users are Chinese, especially those traveling overseas, like to Utah.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "53",
+            "speaker_A": "That's so nice.",
+            "speaker_B": "Perfect. I'm just. I've just decided to go to the Philippines, but I almost went to Phuket as well. But I think it would take longer for me to get to Phuket. And so I just thought it's only five days, so I don't want to travel too long.",
+            "authentic_expression": "Great. I'm all set for the Philippines, though I did consider Phuket too. But I believe the trip to Phuket would take longer, and with only five days at my disposal, I didn't want to spend too much time traveling.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "54",
+            "speaker_A": "The biggest difference between those two islands, what are the most different points between Phuket and Boraque?",
+            "speaker_B": "I've never been to Boricay before, but I know Thailand. I think thai food is so good. Do you like thai food?",
+            "authentic_expression": "I haven't visited Boracay yet, but from what I know of Thailand, I can vouch for Thai food—it's delicious. Are you a fan of Thai cuisine?",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "55",
+            "speaker_A": "I knew I tried Thais maybe.",
+            "speaker_B": "I think it's super good. I think it's super good. But I don't know what Philippines food is. Like. What is it? I never had it before, so I don't really know what to expect. But to be honest with, like, the week after I go to the Philippines, my whole family is coming to Taiwan. So in the honestly, like, I plan to do the same as you, I will just go to the beach and lay down the whole, like, I just want to rest. I really just want to rest and swim in the water, maybe surf a little bit, maybe do some snorkeling. Do you think you will do some water sports or something in Phuket, like snorkeling?",
+            "authentic_expression": "Thai food is fantastic, in my opinion. However, I'm not sure what to expect from Filipino cuisine as I've never tried it myself. By the way, the week after my trip to the Philippines, my whole family will visit Taiwan. So, like you, I'm planning to relax on the beach for most of the time—just taking it easy. I might do some swimming, surfing, or snorkeling. How about you? Are you planning to do any water sports in Phuket, like snorkeling?",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "56",
+            "speaker_A": "I want to scoop diving again because last time there was a heavy wave in the grotto. How do you say in the grotto? In the ground of the sea, like in the bottom.",
+            "speaker_B": "Okay. Riptide.",
+            "authentic_expression": "I'd like to go scuba diving again because last time, the waves were quite strong. What's the word for it? Like, on the seafloor, at the bottom?",
+            "tags": "WORD_USAGE_ERROR"
+        },
+        {
+            "Round": "57",
+            "speaker_A": "Yeah.",
+            "speaker_B": "Or undercurrent. Yeah. So it's dangerous.",
+            "authentic_expression": "Right, or perhaps the undercurrent. It can be dangerous indeed.",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "58",
+            "speaker_A": "No, I mean, when I reach the ground of sea, I almost can say anything.",
+            "speaker_B": "Because the waves were too heavy.",
+            "authentic_expression": "I mean, when I reached the bottom of the sea, visibility was almost zero.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "59",
+            "speaker_A": "Because of wave it.",
+            "speaker_B": "Oh, I didn't know that was a thing. Okay. Yeah. So when the waves go to, the pressure from the waves hits the bottom of the ocean and kind of makes the sand and everything move around so you can. Wow. Okay. Interesting. Okay, so you want to try again and see if it's more clear. But I've never been scuba diving before. I've only done snorkeling. And I guess I felt a little bit nervous to go scuba diving. Is it scary?",
+            "authentic_expression": "You're saying the wave action stirred up the sand at the bottom, reducing visibility. Interesting, I hadn't considered that. It makes sense, though. So, you're hoping for clearer conditions this time around? I've never gone scuba diving myself, just snorkeling. I must admit, the idea of scuba diving intimidates me. Did you find it frightening?",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "60",
+            "speaker_A": "Yeah. Too quiet.",
+            "speaker_B": "Yeah, totally.",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "61",
+            "speaker_A": "Too broad.",
+            "speaker_B": "It feels kind of eerie. Do you know that word? Eerie? It feels kind of like dud. I feel like when I'm under the water, I will just be looking around for shark.",
+            "authentic_expression": "The vastness makes it seem eerie, doesn't it? 'Eerie,' as in unsettling. I can imagine if I were underwater, I'd constantly be on the lookout for sharks.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "62",
+            "speaker_A": "Yeah. There will be a trainer tied with you.",
+            "speaker_B": "Okay.",
+            "authentic_expression": "Right. A dive instructor will accompany you.",
+            "tags": "VOCABULARY"
+        },
+        {
+            "Round": "63",
+            "speaker_A": "You can just control your eyes about the motion. It was took over by the trainer.",
+            "speaker_B": "Okay. It's still intimidating to me, but I think I would try it. But maybe I would try it in Taiwan before Philippines, because I know at least I can communicate better and maybe I know the Taiwan laws a little bit more just because if you go to a different country, sometimes they don't take care of. Actually, I think Bali is kind of famous for this.",
+            "authentic_expression": "You only need to focus on what you see because the instructor will handle the rest. It remains daunting to me, but I'm willing to give it a shot. Perhaps I'd feel more comfortable trying it first in Taiwan, where I can communicate more effectively and am familiar with the local regulations. You know, in some other countries, safety standards can sometimes be overlooked—a situation Bali, for instance, is quite known for.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "64",
+            "speaker_A": "Bali. Bali doll.",
+            "speaker_B": "Yeah, Bali doll. I know a lot of people who have gone to Bali and, like, some things.",
+            "authentic_expression": "Bali, sure. I've heard of many people going to Bali and experiencing some... issues.",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "65",
+            "speaker_A": "Robber.",
+            "speaker_B": "Yeah. Things like. And the. The police officers don't really protect them very will just. I'll try it in Taiwan first, the scuba diving. Maybe not Philippines, but that's so cool that you're going to go do the scuba diving. I'm excited for you to tell me how it is. Do you really like fish in the ocean?",
+            "authentic_expression": "Muggings, for example. The local police don't always provide ample protection for tourists. I think I'll opt to try scuba diving in Taiwan before doing so in the Philippines. It's really awesome that you're going for it. I'm eager to hear about your experience. Are you interested in seeing fish and other marine life?",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "66",
+            "speaker_A": "I don't really. I don't like other creatures. I don't like cats.",
+            "speaker_B": "You don't like animals?",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "67",
+            "speaker_A": "Yeah.",
+            "speaker_B": "You don't like animals. Okay.",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "68",
+            "speaker_A": "I don't know why, but I don't like them.",
+            "speaker_B": "That's so funny. Okay. But it's still cool to do the ocean thing. Do you like plants or nature or something?",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "69",
+            "speaker_A": "I don't care, plants. But I don't like animals.",
+            "speaker_B": "Okay. I don't care, plants. Try that sentence again.",
+            "authentic_expression": "I'm indifferent to plants, but animals are not really my thing.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "70",
+            "speaker_A": "I don't care, plants. I don't care, plants.",
+            "speaker_B": "You need another word before plants.",
+            "authentic_expression": "I'm indifferent to plants.",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "71",
+            "speaker_A": "All the plants.",
+            "speaker_B": "I don't care about plants. Or you can say, I don't mind plants. Like, I don't mind them. It's fine. Yeah. Interesting. Okay, so then what are you excited about for scuba diving?",
+            "authentic_expression": "I don't care about plants. What are you looking forward to when you go scuba diving?",
+            "tags": "CLARITY_AND_FLUENCY"
+        },
+        {
+            "Round": "72",
+            "speaker_A": "That's a spatula feeling, I think.",
+            "speaker_B": "Do you like swimming?",
+            "authentic_expression": "I think it offers a special feeling.",
+            "tags": "WORD_USAGE_ERROR"
+        },
+        {
+            "Round": "73",
+            "speaker_A": "I don't like swimming.",
+            "speaker_B": "Okay.",
+            "authentic_expression": "none",
+            "tags": "CORRECT"
+        },
+        {
+            "Round": "74",
+            "speaker_A": "The most interesting feeling last time is when I wore a lifty suit.",
+            "speaker_B": "We call it a wetsuit.",
+            "authentic_expression": "The most interesting part last time was wearing a buoyancy control device.",
+            "tags": "VOCABULARY"
+        },
+        {
+            "Round": "75",
+            "speaker_A": "Wetsuit, yeah. I just lie down on the sea. Lie down, lie down. Tanzania.",
+            "speaker_B": "Oh, floating.",
+            "authentic_expression": "Yes, a wetsuit. I just floated on the sea. Just floating there.",
+            "tags": "WORD_USAGE_ERROR"
+        },
+        {
+            "Round": "76",
+            "speaker_A": "Yeah. Before, I never thought that it would be that safety, but last time I felt it was okay.",
+            "speaker_B": "Totally.",
+            "authentic_expression": "Previously, I didn't believe it would be so safe, but last time I found it to be quite alright.",
+            "tags": "GRAMMAR"
+        },
+        {
+            "Round": "77",
+            "speaker_A": "I overcame some scares.",
+            "speaker_B": "Scary, I understand. Yeah. It kind of feels like. I feel like what's really cool is when you're in the ocean, under the water, even though, it's really like an Earth thing. It feels like you're in a different world, like a different planet, almost. That's a really strange feeling. And honestly, when you go a little bit deep in the ocean, the fish start to look even more weird. I feel like when you go a little bit deeper, I think they look like aliens. They're so weird. They're so weird. Yeah. But I know some people who have done the traveling to the island, and they do the spear fishing. Have you ever heard of spear fishing?",
+            "authentic_expression": "I managed to confront some fears. Yeah, being underwater in the ocean is quite surreal. It's as if you're in an entirely different world or another planet. It's a bizarre sensation. The deeper you go, the stranger the fish appear—almost alien-like in their appearance. They're incredibly odd. By the way, I know some travelers to islands engage in spearfishing. Are you familiar with spearfishing?",
+            "tags": "SENTENCE_STRUCTURE_ERROR"
+        },
+        {
+            "Round": "78",
+            "speaker_A": "I don't know. Spear fish.",
+            "speaker_B": "It's like you take a stick to
