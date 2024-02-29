@@ -1,170 +1,170 @@
-speaker A: Hello.
-speaker B: Good morning. How are you?
-speaker A: I'm good. How are you?
-speaker B: That's nice. Yeah. I'm actually preparing because I'm going to the Philippines on Saturday, so I'm just packing a little bit.
-speaker A: You're going to Manila?
-speaker B: I'm going to actually go to Boraque island. Have you heard of Boraque Island? I think that. What do you guys call Boraque island? My friend just told me. Is it? No, no, that's in Thailand, I think.
-speaker A: Yeah, I'm going to.
-speaker B: Right now.
-speaker A: You're going there next month.
-speaker B: Oh, fun. I love Phuket Island. I thought you went there recently. Did you go there recently?
-speaker A: No, I went to a chinese island.
-speaker B: Which one?
-speaker A: Hainan.
-speaker B: Oh, Hainan. Oh, I've never been to Hainan before. Is it fun?
-speaker A: Yeah, but I think they are the same.
-speaker B: Phuket and Hainan. You think is the same?
-speaker A: Yeah, because they're all in same.
-speaker B: But, like, the islands must be really different. I know the food at least is different because Phuket has been.
-speaker A: I don't know. For me, I'm thinking there may be, like, Beijing and Shanghai to some extent. Both are the big cities.
-speaker B: Oh, you think that Shanghai and Beijing are similar?
-speaker A: For me, yeah.
-speaker B: Really? I did not expect that. I thought that Beijing would feel like a really old city and Shanghai feels like really modern and new.
-speaker A: Except you go to the core of Beijing. Last month, when I came back to Beijing, I took a taxi to, say, the Tian square and other streets in front of Tianan Square. That core area is so old.
-speaker B: It's very old. It's like.
-speaker A: Qing dynasty.
-speaker B: Wow, that's really cool. But why do people go to Hainan?
-speaker A: Most part of China are in tropical.
-speaker B: So people like to go to the warm, tropical island. But when you go to Hainan, do you spend time on the beach or what kinds of things do you do?
-speaker A: For me, I prefer to just lay on the beach and enjoy the sun. Some of my workers, they prefer to coworkers to visit different attractions. Sure, I saw that. That's boring.
-speaker B: Okay. So they like to explore. We can say, like, you like to lounge or you like to rest and unbaze. Actually, I love doing both of these things. When I go on a trip, I always feel like I want to do, like, half resting and half exploring.
-speaker A: Yeah. In chinese Internet, there is a term to describe the busy.
-speaker B: To describe the what?
-speaker A: Special troops. Special troops travel.
-speaker B: Special troops travel?
-speaker A: Yeah, because you are. Hurry up. Light. A special troop. Like special troops.
-speaker B: Did you say troops?
-speaker A: Yeah, doing their mission.
-speaker B: You mean for the military?
-speaker A: Yeah.
-speaker B: Okay. You can say special forces. Special forces doing okay. What are you saying about special forces?
-speaker A: Because when you travel you are too busy to switch between different attractions like soldier doing their mission.
-speaker B: Okay, I understand.
-speaker A: I guess you don't know it.
-speaker B: No. How do you say that? Hey, in China we would say is there a draft, a military draft which means. It means mandatory military service. Let me ask did you ever do the military in China? Dunbing.
-speaker A: Oh, I got, I got conscription. I mean like Korea.
-speaker B: Yeah, Taiwan also has this.
-speaker A: Everyone except the special.
-speaker B: Everyone. All men, all.
-speaker A: Most in the population is not that much that huge. Will take this place.
-speaker B: Okay, so China doesn't have it because you have a really big population.
-speaker A: Yeah, depends on your.
-speaker B: Did you ever consider joining the military?
-speaker A: Yeah, we invite freshman year.
-speaker B: Oh, you thought about it? No, I actually thought about it too. I almost joined.
-speaker A: I think this kind of sought emerged when you were in a stage that you don't know the real world, you don't know the society.
-speaker B: Yeah, I think that's when I was doing it too also when I was in high school I was thinking about.
-speaker A: It now for me I think that it just waste time.
-speaker B: Agree. I'm so happy that I did not do it. I'm really happy I did not do it. But usually, of course there are different military bases in different places. So we call military base like a military base is where it's.
-speaker A: What'S happening. You mean the camp or the amount of military.
-speaker B: So military base is just talking about the place that you would be stationed which means it's basically talking about the permanent spot for the military.
-speaker A: Like that island you mentioned before, a Penghu Guangdao we call it.
-speaker B: Oh, Guangdao.
-speaker A: You say megwo military base or that's Guam Guangdao.
-speaker B: Yeah. Oh, I thought you were talking about. Because in Taiwan pung Hu is known for. Yeah, like Guam for this. This. It's like a facility the area where the military owns it and it's all operated by the military. Right. And so it's kind of like we're one of the branches of the military. They have the equipment and the soldiers and they do training and they work. Yeah, that's military base.
-speaker A: Did your boyfriend take?
-speaker B: He had to. Yeah. Because in Taiwan you have went to. He went to Penghu for his.
-speaker A: You mean now or before?
+speaker B: Hello.
+speaker A: Good morning. How are you?
+speaker B: I'm good. How are you?
+speaker A: That's nice. Yeah. I'm actually preparing because I'm going to the Philippines on Saturday, so I'm just packing a little bit.
+speaker B: You're going to Manila?
+speaker A: I'm going to actually go to Boraque island. Have you heard of Boraque Island? I think that. What do you guys call Boraque island? My friend just told me. Is it? No, no, that's in Thailand, I think.
+speaker B: Yeah, I'm going to.
+speaker A: Right now.
+speaker B: You're going there next month.
+speaker A: Oh, fun. I love Phuket Island. I thought you went there recently. Did you go there recently?
+speaker B: No, I went to a chinese island.
+speaker A: Which one?
+speaker B: Hainan.
+speaker A: Oh, Hainan. Oh, I've never been to Hainan before. Is it fun?
+speaker B: Yeah, but I think they are the same.
+speaker A: Phuket and Hainan. You think is the same?
+speaker B: Yeah, because they're all in same.
+speaker A: But, like, the islands must be really different. I know the food at least is different because Phuket has been.
+speaker B: I don't know. For me, I'm thinking there may be, like, Beijing and Shanghai to some extent. Both are the big cities.
+speaker A: Oh, you think that Shanghai and Beijing are similar?
+speaker B: For me, yeah.
+speaker A: Really? I did not expect that. I thought that Beijing would feel like a really old city and Shanghai feels like really modern and new.
+speaker B: Except you go to the core of Beijing. Last month, when I came back to Beijing, I took a taxi to, say, the Tian square and other streets in front of Tianan Square. That core area is so old.
+speaker A: It's very old. It's like.
+speaker B: Qing dynasty.
+speaker A: Wow, that's really cool. But why do people go to Hainan?
+speaker B: Most part of China are in tropical.
+speaker A: So people like to go to the warm, tropical island. But when you go to Hainan, do you spend time on the beach or what kinds of things do you do?
+speaker B: For me, I prefer to just lay on the beach and enjoy the sun. Some of my workers, they prefer to coworkers to visit different attractions. Sure, I saw that. That's boring.
+speaker A: Okay. So they like to explore. We can say, like, you like to lounge or you like to rest and unbaze. Actually, I love doing both of these things. When I go on a trip, I always feel like I want to do, like, half resting and half exploring.
+speaker B: Yeah. In chinese Internet, there is a term to describe the busy.
+speaker A: To describe the what?
+speaker B: Special troops. Special troops travel.
+speaker A: Special troops travel?
+speaker B: Yeah, because you are. Hurry up. Light. A special troop. Like special troops.
+speaker A: Did you say troops?
+speaker B: Yeah, doing their mission.
+speaker A: You mean for the military?
 speaker B: Yeah.
-speaker A: Do you know Jinmen?
-speaker B: Yeah, I know Jinmen really close to.
-speaker A: Interesting story. When the party, previous party in Taiwan went out of mainland, they went to Taiwan. Right. But Taiwan is far from mainland, almost 200. They also occupied Jimmy at that time. But mainland military didn't take over Jimmy because they saw that maybe it was a connection between Taiwan and mainland.
-speaker B: Yeah, it's interesting because Jinmen is kind of far from Taiwan. It's really close to China, so it does feel really interesting. I know. I had a friend who lived in Jinmen to teach English, and she said it's like, really weird to live. Know a lot of people, when they think of Jinmen, they only think about military and Galiang. You know, Galiang, the alcohol, Galang tiao. You mean Galiang Tiao? Yeah. So people mostly just think about Jinmen for this. I think military and Galionjiu. Yeah, but not for Guam. Also Guam is famous were like that military. But.
-speaker A: What a japanese island. Guantao. Isn't it Guam?
-speaker B: No. Are we thinking about a different island? Guam is the US island. It's the United States.
-speaker A: It's United States. I know the military is american.
-speaker B: Yeah, I suppose it's a territory of the.
-speaker A: Oh, okay.
-speaker B: Yeah. So we don't call it a state. We call it a us territory territory.
+speaker A: Okay. You can say special forces. Special forces doing okay. What are you saying about special forces?
+speaker B: Because when you travel you are too busy to switch between different attractions like soldier doing their mission.
+speaker A: Okay, I understand.
+speaker B: I guess you don't know it.
+speaker A: No. How do you say that? Hey, in China we would say is there a draft, a military draft which means. It means mandatory military service. Let me ask did you ever do the military in China? Dunbing.
+speaker B: Oh, I got, I got conscription. I mean like Korea.
+speaker A: Yeah, Taiwan also has this.
+speaker B: Everyone except the special.
+speaker A: Everyone. All men, all.
+speaker B: Most in the population is not that much that huge. Will take this place.
+speaker A: Okay, so China doesn't have it because you have a really big population.
+speaker B: Yeah, depends on your.
+speaker A: Did you ever consider joining the military?
+speaker B: Yeah, we invite freshman year.
+speaker A: Oh, you thought about it? No, I actually thought about it too. I almost joined.
+speaker B: I think this kind of sought emerged when you were in a stage that you don't know the real world, you don't know the society.
+speaker A: Yeah, I think that's when I was doing it too also when I was in high school I was thinking about.
+speaker B: It now for me I think that it just waste time.
+speaker A: Agree. I'm so happy that I did not do it. I'm really happy I did not do it. But usually, of course there are different military bases in different places. So we call military base like a military base is where it's.
+speaker B: What'S happening. You mean the camp or the amount of military.
+speaker A: So military base is just talking about the place that you would be stationed which means it's basically talking about the permanent spot for the military.
+speaker B: Like that island you mentioned before, a Penghu Guangdao we call it.
+speaker A: Oh, Guangdao.
+speaker B: You say megwo military base or that's Guam Guangdao.
+speaker A: Yeah. Oh, I thought you were talking about. Because in Taiwan pung Hu is known for. Yeah, like Guam for this. This. It's like a facility the area where the military owns it and it's all operated by the military. Right. And so it's kind of like we're one of the branches of the military. They have the equipment and the soldiers and they do training and they work. Yeah, that's military base.
+speaker B: Did your boyfriend take?
+speaker A: He had to. Yeah. Because in Taiwan you have went to. He went to Penghu for his.
+speaker B: You mean now or before?
+speaker A: Yeah.
+speaker B: Do you know Jinmen?
+speaker A: Yeah, I know Jinmen really close to.
+speaker B: Interesting story. When the party, previous party in Taiwan went out of mainland, they went to Taiwan. Right. But Taiwan is far from mainland, almost 200. They also occupied Jimmy at that time. But mainland military didn't take over Jimmy because they saw that maybe it was a connection between Taiwan and mainland.
+speaker A: Yeah, it's interesting because Jinmen is kind of far from Taiwan. It's really close to China, so it does feel really interesting. I know. I had a friend who lived in Jinmen to teach English, and she said it's like, really weird to live. Know a lot of people, when they think of Jinmen, they only think about military and Galiang. You know, Galiang, the alcohol, Galang tiao. You mean Galiang Tiao? Yeah. So people mostly just think about Jinmen for this. I think military and Galionjiu. Yeah, but not for Guam. Also Guam is famous were like that military. But.
+speaker B: What a japanese island. Guantao. Isn't it Guam?
+speaker A: No. Are we thinking about a different island? Guam is the US island. It's the United States.
+speaker B: It's United States. I know the military is american.
+speaker A: Yeah, I suppose it's a territory of the.
+speaker B: Oh, okay.
+speaker A: Yeah. So we don't call it a state. We call it a us territory territory.
+speaker B: Okay.
+speaker A: Kind of like, I don't know. Do you know Puerto Rico?
+speaker B: Puerto Rico.
+speaker A: Puerto Rico is also a territory. It's not a. Yeah, but it's funny because like I told you, I never considered taking a vacation to Guam. But now I've heard so many asian people say that they will take the vacation to Guam, and I think, oh, that's so interesting. I kind of want to go now. It sounds cool. It sounds spice.
+speaker B: Maybe it's what some are. Spice, some vinegars are spies.
+speaker A: What do you mean? Oh, spies. Spies. Spies. Spies. Yeah, it could be, but I think they will waste a little bit of time in Guam. Yeah, there are a lot of spies in Washington, DC. A lot. I think people say, like, the highest population of spies are in DC. Yeah, I used to live in DC, and me and my boyfriend, we used to go out and guess who was a spy.
+speaker B: But you can't exactly find out.
+speaker A: Yeah, we cannot find out, but we would just create stories for different people and be like, oh, this person, maybe Chinese. Definitely a lot of chinese spies in Washington DC for, um. But you said you're going to Phuket next month. Are you going with people or are you going? Just you?
+speaker B: With my colleague.
+speaker A: That's fun. Is it a man or woman? Colleague.
+speaker B: A man are the majority.
+speaker A: Oh, colleagues.
+speaker B: You're going colleagues? Yeah, with my team, actually.
+speaker A: Okay. That's a fun trip. Are you kidding? Is it organized by your company or you guys? Organized it on your own by my.
+speaker B: Team, not the whole company.
+speaker A: Okay. But I mean, is the company paying for it, really?
+speaker B: Yeah, because we are a travel company.
+speaker A: You didn't tell me that before.
+speaker B: My team's business is selling hotels.
+speaker A: Hotels?
+speaker B: Yeah.
+speaker A: What about hotels?
+speaker B: You book hotels on app.
+speaker A: Okay. Is it just a chinese app or.
+speaker B: Is it international trip? Yeah, maybe we are the same group. We also have broad business, but now most users are the Chinese. They go abroad in Utah.
+speaker A: Interesting. Cool. That's so nice. Perfect. I'm just. I've just decided to go to the Philippines, but I almost went to Phuket as well. But I think it would take longer for me to get to Phuket. And so I just thought it's only five days, so I don't want to travel too long.
+speaker B: The biggest difference between those two islands, what are the most different points between Phuket and Boraque?
+speaker A: I've never been to Boricay before, but I know Thailand. I think thai food is so good. Do you like thai food?
+speaker B: I knew I tried Thais maybe.
+speaker A: I think it's super good. I think it's super good. But I don't know what Philippines food is. Like. What is it? I never had it before, so I don't really know what to expect. But to be honest with, like, the week after I go to the Philippines, my whole family is coming to Taiwan. So in the honestly, like, I plan to do the same as you, I will just go to the beach and lay down the whole, like, I just want to rest. I really just want to rest and swim in the water, maybe surf a little bit, maybe do some snorkeling. Do you think you will do some water sports or something in phuket, like snorkeling?
+speaker B: I want to scoop diving again because last time there was a heavy wave in the grotto. How do you say in the grotto? In the ground of the sea, like in the bottom.
+speaker A: Okay. Riptide.
+speaker B: Yeah.
+speaker A: Or undercurrent. Yeah. So it's dangerous.
+speaker B: No, I mean, when I reach the ground of sea, I almost can say anything.
+speaker A: Because the waves were too heavy.
+speaker B: Because of wave it.
+speaker A: Oh, I didn't know that was a thing. Okay. Yeah. So when the waves go to, the pressure from the waves hits the bottom of the ocean and kind of makes the sand and everything move around so you can. Wow. Okay. Interesting. Okay, so you want to try again and see if it's more clear. But I've never been scuba diving before. I've only done snorkeling. And I guess I felt a little bit nervous to go scuba diving. Is it scary?
+speaker B: Yeah. Too quiet.
+speaker A: Yeah, totally.
+speaker B: Too broad.
+speaker A: It feels kind of eerie. Do you know that word? Eerie? It feels kind of like dud. I feel like when I'm under the water, I will just be looking around for shark.
+speaker B: Yeah. There will be a trainer tied with you.
 speaker A: Okay.
-speaker B: Kind of like, I don't know. Do you know Puerto Rico?
-speaker A: Puerto Rico.
-speaker B: Puerto Rico is also a territory. It's not a. Yeah, but it's funny because like I told you, I never considered taking a vacation to Guam. But now I've heard so many asian people say that they will take the vacation to Guam, and I think, oh, that's so interesting. I kind of want to go now. It sounds cool. It sounds spice.
-speaker A: Maybe it's what some are. Spice, some vinegars are spies.
-speaker B: What do you mean? Oh, spies. Spies. Spies. Spies. Yeah, it could be, but I think they will waste a little bit of time in Guam. Yeah, there are a lot of spies in Washington, DC. A lot. I think people say, like, the highest population of spies are in DC. Yeah, I used to live in DC, and me and my boyfriend, we used to go out and guess who was a spy.
-speaker A: But you can't exactly find out.
-speaker B: Yeah, we cannot find out, but we would just create stories for different people and be like, oh, this person, maybe Chinese. Definitely a lot of chinese spies in Washington DC for, um. But you said you're going to Phuket next month. Are you going with people or are you going? Just you?
-speaker A: With my colleague.
-speaker B: That's fun. Is it a man or woman? Colleague.
-speaker A: A man are the majority.
-speaker B: Oh, colleagues.
-speaker A: You're going colleagues? Yeah, with my team, actually.
-speaker B: Okay. That's a fun trip. Are you kidding? Is it organized by your company or you guys? Organized it on your own by my.
-speaker A: Team, not the whole company.
-speaker B: Okay. But I mean, is the company paying for it, really?
-speaker A: Yeah, because we are a travel company.
-speaker B: You didn't tell me that before.
-speaker A: My team's business is selling hotels.
-speaker B: Hotels?
-speaker A: Yeah.
-speaker B: What about hotels?
-speaker A: You book hotels on app.
-speaker B: Okay. Is it just a chinese app or.
-speaker A: Is it international trip? Yeah, maybe we are the same group. We also have broad business, but now most users are the Chinese. They go abroad in Utah.
-speaker B: Interesting. Cool. That's so nice. Perfect. I'm just. I've just decided to go to the Philippines, but I almost went to Phuket as well. But I think it would take longer for me to get to Phuket. And so I just thought it's only five days, so I don't want to travel too long.
-speaker A: The biggest difference between those two islands, what are the most different points between Phuket and Boraque?
-speaker B: I've never been to Boricay before, but I know Thailand. I think thai food is so good. Do you like thai food?
-speaker A: I knew I tried Thais maybe.
-speaker B: I think it's super good. I think it's super good. But I don't know what Philippines food is. Like. What is it? I never had it before, so I don't really know what to expect. But to be honest with, like, the week after I go to the Philippines, my whole family is coming to Taiwan. So in the honestly, like, I plan to do the same as you, I will just go to the beach and lay down the whole, like, I just want to rest. I really just want to rest and swim in the water, maybe surf a little bit, maybe do some snorkeling. Do you think you will do some water sports or something in phuket, like snorkeling?
-speaker A: I want to scoop diving again because last time there was a heavy wave in the grotto. How do you say in the grotto? In the ground of the sea, like in the bottom.
-speaker B: Okay. Riptide.
-speaker A: Yeah.
-speaker B: Or undercurrent. Yeah. So it's dangerous.
-speaker A: No, I mean, when I reach the ground of sea, I almost can say anything.
-speaker B: Because the waves were too heavy.
-speaker A: Because of wave it.
-speaker B: Oh, I didn't know that was a thing. Okay. Yeah. So when the waves go to, the pressure from the waves hits the bottom of the ocean and kind of makes the sand and everything move around so you can. Wow. Okay. Interesting. Okay, so you want to try again and see if it's more clear. But I've never been scuba diving before. I've only done snorkeling. And I guess I felt a little bit nervous to go scuba diving. Is it scary?
-speaker A: Yeah. Too quiet.
-speaker B: Yeah, totally.
-speaker A: Too broad.
-speaker B: It feels kind of eerie. Do you know that word? Eerie? It feels kind of like dud. I feel like when I'm under the water, I will just be looking around for shark.
-speaker A: Yeah. There will be a trainer tied with you.
-speaker B: Okay.
-speaker A: You can just control your eyes about the motion. It was took over by the trainer.
-speaker B: Okay. It's still intimidating to me, but I think I would try it. But maybe I would try it in Taiwan before Philippines, because I know at least I can communicate better and maybe I know the Taiwan laws a little bit more just because if you go to a different country, sometimes they don't take care of. Actually, I think Bali is kind of famous for this.
-speaker A: Bali. Bali doll.
-speaker B: Yeah, Bali doll. I know a lot of people who have gone to Bali and, like, some things.
-speaker A: Robber.
-speaker B: Yeah. Things like. And the. The police officers don't really protect them very will just. I'll try it in Taiwan first, the scuba diving. Maybe not Philippines, but that's so cool that you're going to go do the scuba diving. I'm excited for you to tell me how it is. Do you really like fish in the ocean?
-speaker A: I don't really. I don't like other creatures. I don't like cats.
-speaker B: You don't like animals?
-speaker A: Yeah.
-speaker B: You don't like animals. Okay.
-speaker A: I don't know why, but I don't like them.
-speaker B: That's so funny. Okay. But it's still cool to do the ocean thing. Do you like plants or nature or something?
-speaker A: I don't care, plants. But I don't like animals.
-speaker B: Okay. I don't care, plants. Try that sentence again.
-speaker A: I don't care, plants. I don't care, plants.
-speaker B: You need another word before plants.
-speaker A: All the plants.
-speaker B: I don't care about plants. Or you can say, I don't mind plants. Like, I don't mind them. It's fine. Yeah. Interesting. Okay, so then what are you excited about for scuba diving?
-speaker A: That's a spatula feeling, I think.
-speaker B: Do you like swimming?
-speaker A: I don't like swimming.
-speaker B: Okay.
-speaker A: The most interesting feeling last time is when I wore a lifty suit.
-speaker B: We call it a wetsuit.
-speaker A: Wetsuit, yeah. I just lie down on the sea. Lie down, lie down. Tanzania.
-speaker B: Oh, floating.
-speaker A: Yeah. Before, I never thought that it would be that safety, but last time I felt it was okay.
-speaker B: Totally.
-speaker A: I overcame some scares.
-speaker B: Scary, I understand. Yeah. It kind of feels like. I feel like what's really cool is when you're in the ocean, under the water, even though, it's really like an Earth thing. It feels like you're in a different world, like a different planet, almost. That's a really strange feeling. And honestly, when you go a little bit deep in the ocean, the fish start to look even more weird. I feel like when you go a little bit deeper, I think they look like aliens. They're so weird. They're so weird. Yeah. But I know some people who have done the traveling to the island, and they do the spear fishing. Have you ever heard of spear fishing?
-speaker A: I don't know. Spear fish.
-speaker B: It's like you take a stick to.
-speaker A: Yeah, it's cool.
-speaker B: It's cool. Would you try that? Because you eat seafood, right?
-speaker A: Yeah, I would like to, but I think it's difficult.
-speaker B: I think it's difficult, but it kind of sounds cool.
-speaker A: Maybe I can.
-speaker B: Because I think Thailand and phuket, they have really fresh fish, and so they must go out to catch the fish every day. Yeah. Should be nice. Anyway, so have you ever gone to Philippines before?
-speaker A: No. I knew a philippine english teacher before.
-speaker B: Oh, yeah? They do speak a lot of English there, which will be, like, maybe a nice break for me. Just like, a nice rest from so much.
-speaker A: Wish.
-speaker B: But when you go traveling, like, you're going to Thailand. So before you travel, do you try to learn a few words in the language, or you're just like, maybe.
-speaker A: It'S famous, but I'm not interested in other words.
-speaker B: Okay, so you don't learn. So. But is it difficult for you? I guess maybe not. Because a lot of things are probably in English.
-speaker A: I don't know. I will tell you after.
-speaker B: Okay.
-speaker A: I think so, though.
-speaker B: I remember that from Thailand. Okay.
+speaker B: You can just control your eyes about the motion. It was took over by the trainer.
+speaker A: Okay. It's still intimidating to me, but I think I would try it. But maybe I would try it in Taiwan before Philippines, because I know at least I can communicate better and maybe I know the Taiwan laws a little bit more just because if you go to a different country, sometimes they don't take care of. Actually, I think Bali is kind of famous for this.
+speaker B: Bali. Bali doll.
+speaker A: Yeah, Bali doll. I know a lot of people who have gone to Bali and, like, some things.
+speaker B: Robber.
+speaker A: Yeah. Things like. And the. The police officers don't really protect them very will just. I'll try it in Taiwan first, the scuba diving. Maybe not Philippines, but that's so cool that you're going to go do the scuba diving. I'm excited for you to tell me how it is. Do you really like fish in the ocean?
+speaker B: I don't really. I don't like other creatures. I don't like cats.
+speaker A: You don't like animals?
+speaker B: Yeah.
+speaker A: You don't like animals. Okay.
+speaker B: I don't know why, but I don't like them.
+speaker A: That's so funny. Okay. But it's still cool to do the ocean thing. Do you like plants or nature or something?
+speaker B: I don't care, plants. But I don't like animals.
+speaker A: Okay. I don't care, plants. Try that sentence again.
+speaker B: I don't care, plants. I don't care, plants.
+speaker A: You need another word before plants.
+speaker B: All the plants.
+speaker A: I don't care about plants. Or you can say, I don't mind plants. Like, I don't mind them. It's fine. Yeah. Interesting. Okay, so then what are you excited about for scuba diving?
+speaker B: That's a spatula feeling, I think.
+speaker A: Do you like swimming?
+speaker B: I don't like swimming.
+speaker A: Okay.
+speaker B: The most interesting feeling last time is when I wore a lifty suit.
+speaker A: We call it a wetsuit.
+speaker B: Wetsuit, yeah. I just lie down on the sea. Lie down, lie down. Tanzania.
+speaker A: Oh, floating.
+speaker B: Yeah. Before, I never thought that it would be that safety, but last time I felt it was okay.
+speaker A: Totally.
+speaker B: I overcame some scares.
+speaker A: Scary, I understand. Yeah. It kind of feels like. I feel like what's really cool is when you're in the ocean, under the water, even though, it's really like an Earth thing. It feels like you're in a different world, like a different planet, almost. That's a really strange feeling. And honestly, when you go a little bit deep in the ocean, the fish start to look even more weird. I feel like when you go a little bit deeper, I think they look like aliens. They're so weird. They're so weird. Yeah. But I know some people who have done the traveling to the island, and they do the spear fishing. Have you ever heard of spear fishing?
+speaker B: I don't know. Spear fish.
+speaker A: It's like you take a stick to.
+speaker B: Yeah, it's cool.
+speaker A: It's cool. Would you try that? Because you eat seafood, right?
+speaker B: Yeah, I would like to, but I think it's difficult.
+speaker A: I think it's difficult, but it kind of sounds cool.
+speaker B: Maybe I can.
+speaker A: Because I think Thailand and phuket, they have really fresh fish, and so they must go out to catch the fish every day. Yeah. Should be nice. Anyway, so have you ever gone to Philippines before?
+speaker B: No. I knew a philippine english teacher before.
+speaker A: Oh, yeah? They do speak a lot of English there, which will be, like, maybe a nice break for me. Just like, a nice rest from so much.
+speaker B: Wish.
+speaker A: But when you go traveling, like, you're going to Thailand. So before you travel, do you try to learn a few words in the language, or you're just like, maybe.
+speaker B: It'S famous, but I'm not interested in other words.
+speaker A: Okay, so you don't learn. So. But is it difficult for you? I guess maybe not. Because a lot of things are probably in English.
+speaker B: I don't know. I will tell you after.
+speaker A: Okay.
+speaker B: I think so, though.
+speaker A: I remember that from Thailand. Okay.
