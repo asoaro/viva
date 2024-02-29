@@ -28,23 +28,21 @@ class UtterancesProcessor:
         print(f"Speaker B spoke {word_count_B} words")
 
         # Swap speakers if B spoke more than A
-        swap = False
         if word_count_B > word_count_A:
-            word_count_A, word_count_B = word_count_B, word_count_A
-            swap = True
-        for line in lines:
-            speaker, sentence = line.split(': ', 1)
-
-            if swap:
+            revised_lines = []  # Initialize a new list to hold revised lines
+            for line in lines:
+                speaker, sentence = line.split(': ', 1)
                 if speaker == 'speaker A':
                     speaker = 'speaker B'
                 elif speaker == 'speaker B':
                     speaker = 'speaker A'
-            line = f"{speaker}: {sentence}"
+                revised_line = f"{speaker}: {sentence}"
+                revised_lines.append(revised_line)  # Append the revised line to the list
+        else:
+            revised_lines = lines
+
         print("Conversation revised and saved to revised_conversation.txt")
-        self.st.write("语音解析完成 您本次对话共进行了 {} 轮, 您输出单词 {} 个, 外教输出 {} 个".format(math.ceil(len(lines) / 2), word_count_B, word_count_A))
-        self.st.write("GPT正在根据你们的语境逐句分析你的表达")
-        return lines
+        return revised_lines  # Return the revised list of lines
 
     def get_utterances_from_transcript(self, transcript):
         utterances = transcript.get("utterances", [])

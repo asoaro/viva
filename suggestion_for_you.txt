@@ -1,116 +1,347 @@
 ```json
 {
-  "properties": {
-    "Suggestion": {
-      "title": "Suggestion",
-      "description": "对每一轮对话的修改和标记",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/Revision"
-      }
-    }
-  },
-  "required": ["Suggestion"],
-  "definitions": {
-    "Revision": {
-      "title": "Revision",
-      "type": "object",
-      "properties": {
-        "Round": {
-          "title": "Round",
-          "description": "对话轮数",
-          "type": "string"
-        },
-        "speaker_A": {
-          "title": "Speaker A",
-          "description": "speaker A 的原表达",
-          "type": "string"
-        },
-        "speaker_B": {
-          "title": "Speaker B",
-          "description": "speaker B 的原表达",
-          "type": "string"
-        },
-        "authentic_expression": {
-          "title": "Authentic Expression",
-          "description": "你提供的authentic expression",
-          "type": "string"
-        },
-        "tags": {
-          "title": "Tags",
-          "description": "这些中的一个或者多个",
-          "type": "string"
-        }
-      },
-      "required": ["Round", "speaker_A", "speaker_B", "authentic_expression", "tags"]
-    }
-  },
   "Suggestion": [
     {
       "Round": "1",
-      "speaker_A": "Gutogu. Yeah, that's my favorite mushroom. I love that mushroom. It's so good.",
-      "speaker_B": "Do you know the mushroom is more colorful? Maybe it's toxic.",
-      "authentic_expression": "Do you know if the more colorful mushrooms are toxic?",
-      "tags": "WORD_USAGE_ERROR"
+      "speaker_A": "Good morning. How are you?",
+      "speaker_B": "I'm good. How are you?",
+      "authentic_expression": "I'm well, thank you. And you?",
+      "tags": "POLITENESS_USAGE"
     },
     {
       "Round": "2",
-      "speaker_A": "The colorful ones, yeah. But I don't go find mushrooms for myself. Do you go look for mushrooms? I just buy them from the store.",
-      "speaker_B": "No, but a province in China called, there are a lot of kinds of mushrooms.",
-      "authentic_expression": "No, but there's a province in China that's famous for its variety of mushrooms.",
-      "tags": "SENTENCE_STRUCTURE_ERROR"
+      "speaker_A": "I'm actually preparing because I'm going to the Philippines on Saturday, so I'm just packing a little bit.",
+      "speaker_B": "You're going to Manila?",
+      "authentic_expression": "none",
+      "tags": "CORRECT"
     },
     {
       "Round": "3",
-      "speaker_A": "Cool.",
-      "speaker_B": "The local people really like it.",
-      "authentic_expression": "The local people really enjoy them.",
-      "tags": "VOCABULARY"
-    },
-    {
-      "Round": "4",
-      "speaker_A": "That's cool.",
-      "speaker_B": "But some are toxic. When you deadly, you will have some.",
-      "authentic_expression": "But some are toxic. Occasionally, there are deadly ones among them.",
-      "tags": "WORD_USAGE_ERROR"
-    },
-    {
-      "Round": "5",
-      "speaker_A": "This is a big topic. So first of all, people go. Literally, they call it mushroom hunting in the US. Like, they look for mushrooms. People love to go look for mushrooms in the US. We have mushrooms here too. And it's true. Some of them are like, you can eat them and they're toxic. Like, deadly. You can actually die from eating them. They're really bad for you. But some of them, and we usually call these shrooms, they're hallucinogenic.",
-      "speaker_B": "none",
-      "authentic_expression": "none",
-      "tags": "CORRECT"
-    },
-    {
-      "Round": "6",
-      "speaker_A": "How do I spell that? I have to figure out how to spell this. Okay, hallucinogenic, which means that you can kind of see things that aren't there. And it's like a drug, like you said. Like a drug. Oh, shoot. Keep talking. My laptop is going to die. I'm getting my charger. But keep talking. I can hear you. Yes. So these, like, these mushrooms. These mushrooms are like, people take them for fun.",
-      "speaker_B": "Like take jobs.",
-      "authentic_expression": "You mean like taking drugs?",
+      "speaker_A": "I'm going to actually go to Boraque island. Have you heard of Boraque Island? I think that. What do you guys call Boraque island? My friend just told me. Is it? No, no, that's in Thailand, I think.",
+      "speaker_B": "Yeah, I'm going to.",
+      "authentic_expression": "Yes, I'm familiar with Boraque Island.",
       "tags": "CLARITY_AND_FLUENCY"
     },
     {
-      "Round": "7",
-      "speaker_A": "You know what I mean?",
-      "speaker_B": "Yeah, like taking a dog. You don't do that.",
-      "authentic_expression": "Yeah, it's like consuming drugs for recreation, which isn't something we do.",
-      "tags": "WORD_USAGE_ERROR"
-    },
-    {
-      "Round": "8",
-      "speaker_A": "Is it expensive? It's more expensive than just like, the mushrooms you eat. But I don't think so. They're not like crazy expensive. I have had them for.",
-      "speaker_B": "none",
+      "Round": "4",
+      "speaker_A": "Right now.",
+      "speaker_B": "You're going there next month.",
       "authentic_expression": "none",
       "tags": "CORRECT"
     },
     {
+      "Round": "5",
+      "speaker_A": "Oh, Hainan. Oh, I've never been to Hainan before. Is it fun?",
+      "speaker_B": "Yeah, but I think they are the same.",
+      "authentic_expression": "It's enjoyable, but I find it quite similar to other islands.",
+      "tags": "WORD_USAGE_ERROR"
+    },
+    {
+      "Round": "6",
+      "speaker_A": "Phuket and Hainan. You think is the same?",
+      "speaker_B": "Yeah, because they're all in same.",
+      "authentic_expression": "Yes, in the sense that they’re both islands.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "7",
+      "speaker_A": "Oh, you think that Shanghai and Beijing are similar?",
+      "speaker_B": "For me, yeah.",
+      "authentic_expression": "none",
+      "tags": "CORRECT"
+    },
+    {
+      "Round": "8",
+      "speaker_A": "That core area is so old.",
+      "speaker_B": "Qing dynasty.",
+      "authentic_expression": "It dates back to the Qing Dynasty.",
+      "tags": "CLARITY_AND_FLUENCY"
+    },
+    {
       "Round": "9",
-      "speaker_A": "And they're like. They're.",
-      "speaker_B": "none",
+      "speaker_A": "Wow, that's really cool. But why do people go to Hainan?",
+      "speaker_B": "Most part of China are in tropical.",
+      "authentic_expression": "Much of China has a tropical climate.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "10",
+      "speaker_A": "What do you mean?",
+      "speaker_B": "Special troops. Special troops travel.",
+      "authentic_expression": "I mean 'military-style travel,' where you're always on the move.",
+      "tags": "CLARITY_AND_FLUENCY"
+    },
+    {
+      "Round": "11",
+      "speaker_A": "What are you saying about special forces?",
+      "speaker_B": "Because when you travel you are too busy to switch between different attractions like soldier doing their mission.",
+      "authentic_expression": "It’s like being a soldier on a mission, constantly moving from one site to another.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "12",
+      "speaker_A": "Did you ever do the military in China? Dunbing.",
+      "speaker_B": "Oh, I got, I got conscription. I mean like Korea.",
+      "authentic_expression": "Yes, we have conscription similar to Korea.",
+      "tags": "WORD_USAGE_ERROR"
+    },
+    {
+      "Round": "13",
+      "speaker_A": "Everyone except the special.",
+      "speaker_B": "Most in the population is not that much that huge. Will take this place.",
+      "authentic_expression": "The majority of the population isn't conscripted due to our large numbers.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "14",
+      "speaker_A": "I think this kind of thought emerged when you were in a stage that you don't know the real world, you don't know the society.",
+      "speaker_B": "I think this kind of sought emerged when you were in a stage that you don't know the real world, you don't know the society.",
+      "authentic_expression": "I think such thoughts arise at a stage when you're not yet familiar with the real world or society.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "15",
+      "speaker_A": "Yeah. Oh, I thought you were talking about. Because in Taiwan pung Hu is known for. Yeah, like Guam for this. This. It's like a facility the area where the military owns it and it's all operated by the military.",
+      "speaker_B": "You say megwo military base or that's Guam Guangdao.",
+      "authentic_expression": "Are you referring to a military base or something similar to the situation with Guam?",
+      "tags": "CLARITY_AND_FLUENCY"
+    },
+    {
+      "Round": "16",
+      "speaker_A": "But now I've heard so many Asian people say that they will take the vacation to Guam, and I think, oh, that's so interesting. I kind of want to go now. It sounds cool.",
+      "speaker_B": "Maybe it's what some are. Spice, some vinegars are spies.",
+      "authentic_expression": "Maybe it has something special. Sometimes, people joke that some tourists are spies.",
+      "tags": "WORD_USAGE_ERROR"
+    },
+    {
+      "Round": "17",
+      "speaker_A": "You didn't tell me that before.",
+      "speaker_B": "My team's business is selling hotels.",
+      "authentic_expression": "Our team's business revolves around hotel sales.",
+      "tags": "CLARITY_AND_FLUENCY"
+    },
+    {
+      "Round": "18",
+      "speaker_A": "Hotels?",
+      "speaker_B": "You book hotels on app.",
+      "authentic_expression": "Yes, you can book hotels through the app.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "19",
+      "speaker_A": "What about hotels?",
+      "speaker_B": "Is it international trip? Yeah, maybe we are the same group. We also have broad business, but now most users are the Chinese. They go abroad in Utah.",
+      "authentic_expression": "Are you asking if it's for international travel? Yes, although our business has a wide reach, most of our users are Chinese who travel abroad, including destinations like Utah.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "20",
+      "speaker_A": "Is it a man or woman? Colleague.",
+      "speaker_B": "A man are the majority.",
+      "authentic_expression": "Mostly men.",
+      "tags": "GRAMMAR"
+    },
+    {
+      "Round": "21",
+      "speaker_A": "Did you say troops?",
+      "speaker_B": "Yeah, doing their mission.",
+      "authentic_expression": "Yes, like soldiers on a mission.",
+      "tags": "CLARITY_AND_FLUENCY"
+    },
+    {
+      "Round": "22",
+      "speaker_A": "You mean for the military?",
+      "speaker_B": "Yeah.",
+      "authentic_expression": "none",
+      "tags": "CORRECT"
+    },
+    {
+      "Round": "23",
+      "speaker_A": "You can say special forces. Special forces doing okay. What are you saying about special forces?",
+      "speaker_B": "Because when you travel you are too busy to switch between different attractions like soldier doing their mission.",
+      "authentic_expression": "I'm referring to traveling in a rushed manner, similar to how special forces execute their missions, quickly moving from one location to the next.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "24",
+      "speaker_A": "Is it just a chinese app or.",
+      "speaker_B": "Is it international trip? Yeah, maybe we are the same group. We also have broad business, but now most users are the Chinese. They go abroad in Utah.",
+      "authentic_expression": "Are you asking if our app is international? Yes, it is. We serve a diverse market, but currently, most of our users are Chinese, including those who travel to destinations like Utah.",
+      "tags": "CLARITY_AND_FLUENCY"
+    },
+    {
+      "Round": "25",
+      "speaker_A": "Yeah, like Guam for this. This. It's like a facility the area where the military owns it and it's all operated by the military.",
+      "speaker_B": "You say megwo military base or that's Guam Guangdao.",
+      "authentic_expression": "Do you mean a large military base like what's in Guam?",
+      "tags": "CLARITY_AND_FLUENCY"
+    },
+    {
+      "Round": "26",
+      "speaker_A": "So people mostly just think about Jinmen for this. I think military and Galionjiu.",
+      "speaker_B": "Yeah, but not for Guam. Also Guam is famous were like that military. But.",
+      "authentic_expression": "Yes, but not in the case of Guam. Guam is also known for its military presence.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "27",
+      "speaker_A": "I think it's super good. But I don't know what Philippines food is. Like. What is it?",
+      "speaker_B": "I knew I tried Thais maybe.",
+      "authentic_expression": "I'm not sure about Filipino cuisine, but I have tried Thai food.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "28",
+      "speaker_A": "Yeah. Spies. Spies. Yeah, it could be, but I think they will waste a little bit of time in Guam.",
+      "speaker_B": "Maybe it's what some are. Spice, some vinegars are spies.",
+      "authentic_expression": "Perhaps for some, Guam could be an interesting place, even if there are spies around.",
+      "tags": "CLARITY_AND_FLUENCY"
+    },
+    {
+      "Round": "29",
+      "speaker_A": "Do you like swimming?",
+      "speaker_B": "I don't like swimming.",
+      "authentic_expression": "none",
+      "tags": "CORRECT"
+    },
+    {
+      "Round": "30",
+      "speaker_A": "But it's still cool to do the ocean thing. Do you like plants or nature or something?",
+      "speaker_B": "I don't care, plants. But I don't like animals.",
+      "authentic_expression": "I'm indifferent towards plants, but I'm not fond of animals.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    }
+  ]
+}
+``````json
+{
+  "Suggestion": [
+    {
+      "Round": "31",
+      "speaker_A": "You need another word before plants.",
+      "speaker_B": "All the plants.",
+      "authentic_expression": "I don't care about all the plants.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "32",
+      "speaker_A": "But is it difficult for you?",
+      "speaker_B": "I don't know. I will tell you after.",
+      "authentic_expression": "I'm not sure, but I'll let you know afterwards.",
+      "tags": "CLARITY_AND_FLUENCY"
+    },
+    {
+      "Round": "33",
+      "speaker_A": "Did you say troops?",
+      "speaker_B": "Yeah, doing their mission.",
+      "authentic_expression": "Yes, carrying out their mission.",
+      "tags": "WORD_USAGE_ERROR"
+    },
+    {
+      "Round": "34",
+      "speaker_A": "It's like a facility the area where the military owns it and it's all operated by the military.",
+      "speaker_B": "Like that island you mentioned before, a Penghu Guangdao we call it.",
+      "authentic_expression": "Similar to the island you mentioned earlier, what we refer to as Penghu or 'Guangdao'.",
+      "tags": "WORD_USAGE_ERROR"
+    },
+    {
+      "Round": "35",
+      "speaker_A": "But now I've heard so many Asian people say that they will take the vacation to Guam, and I think, oh, that's so interesting. I kind of want to go now.",
+      "speaker_B": "Maybe it's what some are. Spice, some vinegars are spies.",
+      "authentic_expression": "Perhaps that's what attracts people. Although sometimes there's a joke that some tourists might be spies.",
+      "tags": "WORD_USAGE_ERROR"
+    },
+    {
+      "Round": "36",
+      "speaker_A": "What's happening. You mean the camp or the amount of military.",
+      "speaker_B": "What'S happening. You mean the camp or the amount of military.",
+      "authentic_expression": "Are you asking about the military presence or the facilities at the camp?",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "37",
+      "speaker_A": "So military base is just talking about the place that you would be stationed which means it's basically talking about the permanent spot for the military.",
+      "speaker_B": "Like that island you mentioned before, a Penghu Guangdao we call it.",
+      "authentic_expression": "Similar to the island you brought up, which we call Penghu or 'Guangdao'.",
+      "tags": "WORD_USAGE_ERROR"
+    },
+    {
+      "Round": "38",
+      "speaker_A": "Is it difficult for you?",
+      "speaker_B": "I don't know. I will tell you after.",
+      "authentic_expression": "I'm not sure yet. I'll have to let you know later.",
+      "tags": "CLARITY_AND_FLUENCY"
+    },
+    {
+      "Round": "39",
+      "speaker_A": "Do you mean for the military?",
+      "speaker_B": "Yeah.",
+      "authentic_expression": "none",
+      "tags": "CORRECT"
+    },
+    {
+      "Round": "40",
+      "speaker_A": "But now I've heard so many Asian people say that they will take the vacation to Guam, and I think, oh, that's so interesting.",
+      "speaker_B": "Maybe it's what some are. Spice, some vinegars are spies.",
+      "authentic_expression": "Maybe that's part of the appeal for some. Ironically, we also joke that some of those tourists could be spies.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "41",
+      "speaker_A": "Did you ever do the military in China?",
+      "speaker_B": "Oh, I got, I got conscription. I mean like Korea.",
+      "authentic_expression": "Oh, you're referring to conscription, similar to the system in Korea?",
+      "tags": "CLARITY_AND_FLUENCY"
+    },
+    {
+      "Round": "42",
+      "speaker_A": "Interesting. Cool.",
+      "speaker_B": "That's so nice. Perfect.",
+      "authentic_expression": "none",
+      "tags": "CORRECT"
+    },
+    {
+      "Round": "43",
+      "speaker_A": "Everyone except the special.",
+      "speaker_B": "Most in the population is not that much that huge. Will take this place.",
+      "authentic_expression": "The majority of the population isn't affected; it's not too extensive a practice.",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "44",
+      "speaker_A": "Yeah, like Guam for this. This. It's like a facility the area where the military owns it and it's all operated by the military.",
+      "speaker_B": "You say megwo military base or that's Guam Guangdao.",
+      "authentic_expression": "Are you talking about a major military base similar to what exists in Guam?",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "45",
+      "speaker_A": "What's happening. You mean the camp or the amount of military.",
+      "speaker_B": "What'S happening. You mean the camp or the amount of military.",
+      "authentic_expression": "Do you mean the size of the camp or the number of military personnel?",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "46",
+      "speaker_A": "Yeah, like Guam for this. This. It's like a facility the area where the military owns it and it's all operated by the military.",
+      "speaker_B": "You say megwo military base or that's Guam Guangdao.",
+      "authentic_expression": "Do you mean a major military base, like the one in Guam?",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "47",
+      "speaker_A": "What's happening. You mean the camp or the amount of military.",
+      "speaker_B": "What'S happening. You mean the camp or the amount of military.",
+      "authentic_expression": "Are you asking whether you're referring to the military camp or the number of military personnel?",
+      "tags": "SENTENCE_STRUCTURE_ERROR"
+    },
+    {
+      "Round": "48",
+      "speaker_A": "Do you mean for the military?",
+      "speaker_B": "Yeah.",
       "authentic_expression": "none",
       "tags": "CORRECT"
     }
   ]
 }
-```The JSON response provided is complete and contains suggestions and tags for each round of dialogue you provided. Since the sequence ended at round 9 with "speaker A: And they're like. They're.", there isn't a continuation to provide further.
-
-However, if you have more dialogue that you'd like to be reviewed, please feel free to include it and I'll be happy to continue providing suggestions and tags for additional rounds of conversation.
+```
